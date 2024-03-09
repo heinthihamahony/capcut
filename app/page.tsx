@@ -2,112 +2,361 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <div className="">
+      <div className=" px-6 py-3 gap-8 flex justify-between items-center">
+        <div className="flex gap-4 text-sm items-center">
+          <a className=" " href="#">
+            <img
+              className=" w-28 rounded-lg"
+              src="data:image/png;base64,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"
+              alt=""
             />
+          </a>
+
+          <a className=" flex" href="#">
+            Templates
+            <svg
+              className=" w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+            </svg>
+            <p className=" bg-red-500 text-white rounded-full px-1 pt-1 text-xs">
+              New
+            </p>
+          </a>
+
+          <a className=" flex" href="#">
+            Products
+            <svg
+              className=" w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+            </svg>
+          </a>
+          <a className=" flex" href="#">
+            Solutions
+            <svg
+              className=" w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+            </svg>
+          </a>
+          <a className=" flex" href="#">
+            Resources
+            <svg
+              className=" w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+            </svg>
+          </a>
+          <a className=" flex" href="#">
+            Business
+            <svg
+              className=" w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+            </svg>
+            <p className=" bg-red-500 text-white rounded-full px-1 pt-1 text-xs">
+              New
+            </p>
+          </a>
+          <a className=" flex" href="#">
+            Download
+            <svg
+              className=" w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+            >
+              <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+            </svg>
+          </a>
+        </div>
+        <div className=" flex text-sm items-center gap-3">
+          <a className=" px-3" href="#">
+            <svg
+              width="2em"
+              height="1.7em"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              fill="none"
+              role="presentation"
+              xmlns="http://www.w3.org/2000/svg"
+              className="lv_feedback-icon"
+            >
+              <g>
+                <path
+                  data-follow-fill="currentColor"
+                  d="M11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM12 6a4 4 0 0 0-3.969 3.501c-.034.274.193.499.469.499h1c.276 0 .494-.227.562-.495A2.001 2.001 0 0 1 14 10c0 .566-.135.847-.269 1.025-.162.216-.39.379-.786.643l-.04.026c-.352.235-.85.567-1.236 1.081-.35.466-.573 1.029-.645 1.726-.027.274.2.499.476.499h1c.276 0 .49-.227.544-.497.05-.253.138-.412.225-.528.162-.216.39-.379.786-.643l.04-.026c.352-.235.85-.567 1.236-1.081.43-.572.669-1.29.669-2.225a4 4 0 0 0-4-4Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  data-follow-fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"
+                  fill="currentColor"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <a className=" bg-[#212124] px-3 py-2 rounded-lg" href="#">
+            Sign in
+          </a>
+          <a className="bg-[#00cae0] text-black  px-3 py-2 rounded-lg" href="#">
+            Sign up
           </a>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className=" text-center mt-32">
+        <p className=" text-5xl font-bold ">
+          Free all-in-one video editor for everyone to <br /> create anything
+          anywhere
+        </p>
+        <p className=" mt-8 mb-10 text-[#7a7a81]">
+          Flexible editing, magical AI tools, team collaboration, and stock
+          assets. Make video creation like never before.
+        </p>
+        <button className="bg-[#00cae0] text-black px-36 py-4 font-bold rounded-lg">
+          Sign up for free
+        </button>
+        <p className=" mt-14 mb-10 text-sm text-[#7a7a81]"> Available on</p>
+        <div className=" flex gap-6 justify-center">
+          <button className=" bg-[#2c2c2d] px-8 py-4 rounded-lg">
+            <svg
+              width="3em"
+              height="3em"
+              viewBox="0 0 36 36"
+              preserveAspectRatio="xMidYMid meet"
+              fill="none"
+              role="presentation"
+              xmlns="http://www.w3.org/2000/svg"
+              className="pc_landing-edit-online-default-icon mx-auto py-2"
+            >
+              <g>
+                <path
+                  d="M3 9a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V9Zm3 18V13.5h24V27H6Zm.5-15.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm6.5-1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm3.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  data-follow-fill="#E6E6E6"
+                  fill="currentColor"
+                ></path>
+              </g>
+            </svg>
+            <p>Edit video online</p>
+          </button>
+          <button className=" bg-[#2c2c2d] px-8 py-4 rounded-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(255,255,255,1)"
+              className=" w-8 py-2 mx-auto"
+            >
+              <path d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z"></path>
+            </svg>
+            <p>Download for Mac</p>
+          </button>
+        </div>
+        <div className=" mt-12">
+          <svg
+            className=" w-8 mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="rgba(255,255,255,1)"
+          >
+            <path d="M12 19.1642L18.2071 12.9571L16.7929 11.5429L12 16.3358L7.20711 11.5429L5.79289 12.9571L12 19.1642ZM12 13.5143L18.2071 7.30722L16.7929 5.89301L12 10.6859L7.20711 5.89301L5.79289 7.30722L12 13.5143Z"></path>
+          </svg>
+          <p className=" mt-5 text-[#7a7a81] ">Explore more features</p>
+        </div>
+        <div className=" mt-24">
+          <p>Trusted by</p>
+          <div className=" flex justify-center gap-14">
+            <img
+              className=" w-24"
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/345825e43f9b98b1-205.webp"
+              alt=""
+            />
+            <img
+              className=" w-24"
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/9bd5ab79b9f08f8d-246.webp"
+              alt=""
+            />
+            <img
+              className=" w-20"
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/6cb68cbb32323aea-153.webp"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="">
+        <p className=" text-4xl font-bold text-center mt-44">
+          Use templates to quickly create your <br /> own ads!
+        </p>
+        <div className=" flex gap-8 justify-center mt-16">
+          <video
+            className="w-52 rounded-lg"
+            src="https://v16-cc.capcut.com/dd7da5b95477ef9d9ce1f8bdb3c30da4/65eefc2f/video/tos/alisg/tos-alisg-ve-8fe9aq-sg/o8tbvBhqCFrUxQtj4jQfhllfIB3t2Br8Pgzcur/?a=348188&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=1834&bt=917&bti=NTo2NmY1NDM6&cs=0&ds=3&ft=GAAO2Inz7ThOAIymXq8Zmo&mime_type=video_mp4&qs=0&rc=PGVmZGc6Z2Y8aTQ1NzVpZ0BpM2tkdzg6Zmo6aTMzOGVkNEAuMzVhMzAzNjMxYzNeYzJeYSNwX3FpcjRvMnJgLS1kYi1zcw%3D%3D&l=021709642529078fdbddc5100ff2f01ffffffff000007e19fe3ea&btag=e00088000"
+          ></video>
+          <video
+            className="w-52 rounded-lg"
+            src="https://v16-cc.capcut.com/76695c6464ec11fac6c5749694f5b039/65eefc30/video/tos/alisg/tos-alisg-ve-8fe9aq-sg/oETumsfB5Izi5IQCCo5gNNh3kHUdtHYBQBZf4B/?a=348188&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=2038&bt=1019&bti=NTo2NmY1NDM6&cs=0&ds=3&ft=GAAO2Inz7ThOAIymXq8Zmo&mime_type=video_mp4&qs=0&rc=ZGRmNDZkZjw4aWU3NGU2M0BpM3M1bTs6ZnZ4ajMzOGVkNEBeYTBgMDAvNTIxXjRiNV9eYSNoYV9vcjRnLzBgLS1kYi1zcw%3D%3D&l=021709642529078fdbddc5100ff2f01ffffffff000007e19fe3ea&btag=e00088000"
+          ></video>
+          <video
+            className="w-52 rounded-lg"
+            src="https://v16-cc.capcut.com/cb9ea33b71b6e3478b9fbeaf25b47e36/65eefc2b/video/tos/alisg/tos-alisg-ve-8fe9aq-sg/ocgFAQYonlwefFfnADb7KmUQjeOydQG6HBm2NL/?a=348188&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=1032&bt=516&bti=NTo2NmY1NDM6&cs=0&ds=3&ft=GAAO2Inz7ThOAIymXq8Zmo&mime_type=video_mp4&qs=0&rc=Nzg4Zjk6OzozNTczNTRmNEBpam1lcDM6Zjl5ajMzOGVkNEA0MGNjXmNeXjExLy4xXl8wYSNtMF5ncjQwcy9gLS1kYi1zcw%3D%3D&l=021709642529078fdbddc5100ff2f01ffffffff000007e19fe3ea&btag=e00088000"
+          ></video>
+          <video
+            className="w-52 rounded-lg"
+            src="https://v16-cc.capcut.com/c2ec4cbf8057f808ed2fd587054f1b08/65eefc29/video/tos/alisg/tos-alisg-ve-8fe9aq-sg/oIyIo0BWOAmIOBfWBAtUQDCQBAXOw4toiIxzhy/?a=348188&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=2306&bt=1153&bti=NTo2NmY1NDM6&cs=0&ds=3&ft=GAAO2Inz7ThOAIymXq8Zmo&mime_type=video_mp4&qs=0&rc=aGdpZmQ6ZzM7MzkzNTo0N0BpMzl0NzQ6Zjp2ajMzOGVkNEA0YDFjYi0tX18xLS0zXi0xYSNtby5fcjRfNS1gLS1kYi1zcw%3D%3D&l=021709642529078fdbddc5100ff2f01ffffffff000007e19fe3ea&btag=e00088000"
+          ></video>
+          <video
+            className="w-52 rounded-lg"
+            src="https://v16-cc.capcut.com/adfc307dc8801b91affc81b261bc58f9/65eefc30/video/tos/alisg/tos-alisg-ve-8fe9aq-sg/ocQOogBVtUvBCWnk6eosbUzbEnduLDEgQOyfBU/?a=348188&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=2372&bt=1186&bti=NTo2NmY1NDM6&cs=0&ds=3&ft=GAAO2Inz7ThOAIymXq8Zmo&mime_type=video_mp4&qs=0&rc=NWQ0NzQ2O2RmMzYzO2Q3aEBpM2R4bWg6ZmxsajMzOGVkNEA0YGItLmExNWMxNDMyNTIvYSMuYmJycjRvZzBgLS1kYi1zcw%3D%3D&l=021709642529078fdbddc5100ff2f01ffffffff000007e19fe3ea&btag=e00088000"
+          ></video>
+          <video
+            className="w-52 rounded-lg"
+            src="https://v16-cc.capcut.com/961ad6788ad075822d090a67d09d178b/65eefc2d/video/tos/maliva/tos-maliva-v-be9c48-us/okGygne5nowFIONfHXegSPryXCbiICCQDNgwTD/?a=348188&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=1432&bt=716&bti=NTo2NmY1NDM6&cs=0&ds=3&ft=GAAO2Inz7ThOAIymXq8Zmo&mime_type=video_mp4&qs=0&rc=Zzo5PDo1ODlnN2dlOjo3N0BpM2U3aDk6ZnZtajMzN2doM0A1YTAtYDUtNjQxYzFeMS8xYSNmazBycjRnczBgLS1kNjZzcw%3D%3D&l=021709642529078fdbddc5100ff2f01ffffffff000007e19fe3ea&btag=e00088000"
+          ></video>
+        </div>
+        <div className=" text-center mt-32">
+          <button className="bg-[#00cae0] text-black px-3 py-2 font-bold text-sm rounded-lg">
+            {" "}
+            View all
+          </button>
+        </div>
       </div>
-    </main>
+      <div className=" text-center mt-80">
+        <p className=" text-8xl font-bold text-center text-gradient-2 pb-2">
+          Smart tools. <br /> High efficiency.
+        </p>
+        <p className=" mt-5 text-[#7a7a81]">
+          Smart tools to make your video creation easier
+        </p>
+      </div>
+      <div className="mt-56 mx-40 ">
+        <div className=" flex gap-2 justify-center">
+          <button className=" bg-[#2a2a2a] px-6 pb-3 rounded-xl">
+            <img
+              className=" w-10 mx-auto py-4"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/b7ba2555388b4d9595d5ecda9c6da797~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className="">
+              Remove <br /> background
+            </p>
+          </button>
+          <button className=" bg-[#2a2a2a] px-3 pb-3 rounded-xl">
+            <img
+              className=" w-10 mx-auto py-4"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/fe0bff2d8d2143378119520062741d35~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className=" pb-6">Image upscaler</p>
+          </button>
+          <button className=" bg-[#2a2a2a] px-7 rounded-xl">
+            <img
+              className=" w-10 mx-auto py-4"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/01b6834f026a4753810a702b823259a6~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className=" pb-3">
+              AI color <br /> correction
+            </p>
+          </button>
+          <button className=" bg-[#2a2a2a] px-6 rounded-xl">
+            <img
+              className=" w-10 mx-auto py-4"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/45d646ea4f3240a79d475979b4a2498c~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className=" pb-3">
+              Old photo <br /> restoration
+            </p>
+          </button>
+          <button className=" bg-[#2a2a2a] px-2 rounded-xl">
+            <img
+              className=" w-10 mx-auto pb-4"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/6e75afe2e01d45dfadc35864e1153425~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className=" pb-5">Photo colorizer</p>
+          </button>
+          <button className=" bg-[#2a2a2a] px-7 rounded-xl">
+            <img
+              className=" w-10 mx-auto pt-1"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/fe3166bfe473422dbe2afdcce722ea89~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className=" pt-4">
+              Portrait <br /> generator
+            </p>
+          </button>
+          <button className=" bg-[#2a2a2a] px-4 rounded-xl">
+            <img
+              className=" w-10 mx-auto pb-4"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/c9e9e30673ff4f849ca7f95cb6701a90~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className="pb-5">Resize video</p>
+          </button>
+          <button className=" bg-[#2a2a2a] px-2 rounded-xl">
+            <img
+              className=" w-10 mx-auto pb-4"
+              src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/1c2ab42ad5d346d79bc3cfe482e3f337~tplv-6rr7idwo9f-image.image"
+              alt=""
+            />
+            <p className="pb-5">Video upscaler</p>
+          </button>
+        </div>
+      </div>
+      <div className="grid grid-cols-12 mx-44">
+        <div className="col-span-5">
+          <p className="text-4xl font-bold ">
+            Remove <br /> background
+          </p>
+          <p className=" my-4">
+            Accurately remove the background of the <br /> portrait video and
+            replace it with uploaded <br /> image or change the background
+            color.
+          </p>
+          <a
+            className="bg-[#00cae0] text-black text-sm font-semibold px-4 py-2 rounded-lg flex items-center gap-2 w-32"
+            href="#"
+          >
+            Try to free
+            <svg
+              className="w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </a>
+        </div>
+        <div className="col-span-7">
+          <video
+            className=" rounded-lg"
+            src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/4ac2c75058fe48b1b0f9375436a98416~tplv-6rr7idwo9f-image.image"
+          ></video>
+        </div>
+      </div>
+    </div>
   );
 }
