@@ -13,7 +13,7 @@ export default function Home() {
             />
           </a>
 
-          <a className=" flex" href="#">
+          <a className=" flex foot-link" href="#">
             Templates
             <svg
               className=" w-6"
@@ -28,10 +28,10 @@ export default function Home() {
             </p>
           </a>
 
-          <a className=" flex" href="#">
+          <a className=" flex foot-link" href="#">
             Products
             <svg
-              className=" w-6"
+              className=" w-6 "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="rgba(255,255,255,1)"
@@ -39,7 +39,7 @@ export default function Home() {
               <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
             </svg>
           </a>
-          <a className=" flex" href="#">
+          <a className=" flex foot-link" href="#">
             Solutions
             <svg
               className=" w-6"
@@ -50,7 +50,7 @@ export default function Home() {
               <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
             </svg>
           </a>
-          <a className=" flex" href="#">
+          <a className=" flex foot-link" href="#">
             Resources
             <svg
               className=" w-6"
@@ -61,7 +61,7 @@ export default function Home() {
               <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
             </svg>
           </a>
-          <a className=" flex" href="#">
+          <a className=" flex foot-link" href="#">
             Business
             <svg
               className=" w-6"
@@ -75,7 +75,7 @@ export default function Home() {
               New
             </p>
           </a>
-          <a className=" flex" href="#">
+          <a className=" flex foot-link" href="#">
             Download
             <svg
               className=" w-6"
@@ -115,10 +115,13 @@ export default function Home() {
               </g>
             </svg>
           </a>
-          <a className=" bg-[#212124] px-3 py-2 rounded-lg" href="#">
+          <a className=" bg-[#212124] bg-2 px-3 py-2 rounded-lg" href="#">
             Sign in
           </a>
-          <a className="bg-[#00cae0] text-black  px-3 py-2 rounded-lg" href="#">
+          <a
+            className="bg-[#00cae0] bg-3 text-black  px-3 py-2 rounded-lg"
+            href="#"
+          >
             Sign up
           </a>
         </div>
@@ -132,12 +135,12 @@ export default function Home() {
           Flexible editing, magical AI tools, team collaboration, and stock
           assets. Make video creation like never before.
         </p>
-        <button className="bg-[#00cae0] text-black px-36 py-4 font-bold rounded-lg">
+        <button className="bg-[#00cae0] bg-3 text-black px-36 py-4 font-bold rounded-lg">
           Sign up for free
         </button>
         <p className=" mt-14 mb-10 text-sm text-[#7a7a81]"> Available on</p>
         <div className=" flex gap-6 justify-center">
-          <button className=" bg-[#2c2c2d] px-8 py-4 rounded-lg">
+          <button className=" bg-[#2c2c2d] bg-4 px-8 py-4 rounded-lg">
             <svg
               width="3em"
               height="3em"
@@ -160,7 +163,7 @@ export default function Home() {
             </svg>
             <p>Edit video online</p>
           </button>
-          <button className=" bg-[#2c2c2d] px-8 py-4 rounded-lg">
+          <button className=" bg-[#2c2c2d] bg-4 px-8 py-4 rounded-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -235,7 +238,7 @@ export default function Home() {
           ></video>
         </div>
         <div className=" text-center mt-32">
-          <button className="bg-[#00cae0] text-black px-3 py-2 font-bold text-sm rounded-lg">
+          <button className="bg-[#00cae0] bg-3 text-black px-3 py-2 font-bold text-sm rounded-lg">
             {" "}
             View all
           </button>
@@ -249,7 +252,7 @@ export default function Home() {
           Smart tools to make your video creation easier
         </p>
       </div>
-      <div className="mt-56 mx-40 ">
+      <div className="mt-56 mx-40 mb-24">
         <div className=" flex gap-2 justify-center">
           <button className=" bg-[#2a2a2a] px-6 pb-3 rounded-xl">
             <img
@@ -326,17 +329,17 @@ export default function Home() {
         </div>
       </div>
       <div className="grid grid-cols-12 mx-44">
-        <div className="col-span-5">
+        <div className="col-span-5 my-auto">
           <p className="text-4xl font-bold ">
             Remove <br /> background
           </p>
-          <p className=" my-4">
+          <p className=" my-4 text-[#7a7a81]">
             Accurately remove the background of the <br /> portrait video and
             replace it with uploaded <br /> image or change the background
             color.
           </p>
           <a
-            className="bg-[#00cae0] text-black text-sm font-semibold px-4 py-2 rounded-lg flex items-center gap-2 w-32"
+            className="bg-[#00cae0] bg-3 text-black text-sm font-semibold px-4 py-2 rounded-lg flex items-center gap-2 w-32"
             href="#"
           >
             Try to free
@@ -357,6 +360,557 @@ export default function Home() {
           ></video>
         </div>
       </div>
+      <div className=" mt-60 mb-20">
+        <p className=" text-8xl font-bold text-center text-gradient-2 pb-2 mb-24">
+          Powerful <br /> features, easy <br /> steps
+        </p>
+        <div className="grid grid-cols-12 mx-44">
+          <div className="col-span-7">
+            <video
+              className=" rounded-lg"
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/media/speech_to_text.6c86d729.mp4"
+            ></video>
+          </div>
+          <div className="col-span-5 my-auto mx-16">
+            <p className="text-4xl font-bold ">Speech to text</p>
+            <p className=" my-4 text-[#7a7a81]">
+              Automatically recognize different <br /> languages and generate
+              high-accuracy <br /> captions to boost your editing efficiency.
+            </p>
+            <a
+              className="bg-[#00cae0] bg-3 text-black text-sm font-semibold px-4 py-2 rounded-lg flex items-center gap-2 w-32"
+              href="#"
+            >
+              Try to free
+              <svg
+                className="w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-12 mx-44">
+        <div className="col-span-5 my-auto">
+          <p className="text-4xl font-bold ">Text to speech</p>
+          <p className=" my-4 text-[#7a7a81]">
+            Convert any text to natural-sounding <br /> speech with one click.
+            11 voices and 10 <br /> languages supported.
+          </p>
+          <a
+            className="bg-[#00cae0] bg-3 text-black text-sm font-semibold px-4 py-2 rounded-lg flex items-center gap-2 w-32"
+            href="#"
+          >
+            Try to free
+            <svg
+              className="w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </a>
+        </div>
+        <div className="col-span-7">
+          <video
+            className=" rounded-lg"
+            src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-us/common/videos/text_to_speech.mp4"
+          ></video>
+        </div>
+      </div>
+      <div className=" bg-[#1c1d21] text-center py-32 mt-24">
+        <p className="text-4xl font-semibold ">Create together. Work better.</p>
+        <p className="mt-3 text-[#7a7a81]">
+          Collaborate with your team. Share ideas, assets, and give feedback
+          instantly and securely.
+        </p>
+        <button className="bg-[#00cae0] bg-3 text-black text-sm font-semibold px-4 py-2 rounded-lg mt-10">
+          Work together
+        </button>
+        <video
+          className="mx-auto w-9/12 rounded-lg mt-20"
+          src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/media/create_together.ea339d0c.mp4"
+        ></video>
+      </div>
+      <div className="mx-44">
+        <p className="text-5xl font-semibold text-center mt-36">
+          Enrich your video content with commercial <br /> resources
+        </p>
+        <div className=" grid grid-cols-2 gap-6 mt-14">
+          <div className="flex border border-[#1c1c1f] px-7 py-6 rounded-lg">
+            <div className="">
+              <p className=" text-lg">Music</p>
+              <p className=" text-2xl font-semibold">500,000+</p>
+              <svg
+                width="1.8em"
+                height="1.8em"
+                viewBox="0 0 40 41"
+                preserveAspectRatio="xMidYMid meet"
+                fill="none"
+                role="presentation"
+                xmlns="http://www.w3.org/2000/svg"
+                className="pc_landing_enrich_resources-itemList-item-icon mt-40"
+              >
+                <g>
+                  <path
+                    d="M33.826 5.266A1 1 0 0 1 35 6.251V27.07h-.052a6.667 6.667 0 1 1-3.282-4.942V9.708L15 12.648v17.088h-.002a6.667 6.667 0 1 1-3.331-5.941V10.012a1 1 0 0 1 .826-.984l21.333-3.762Zm-2.16 22.637a3.333 3.333 0 1 1-6.666 0 3.333 3.333 0 0 1 6.667 0Zm-23.333 5a3.333 3.333 0 1 0 0-6.667 3.333 3.333 0 0 0 0 6.667Z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                    data-follow-fill="#E6E6E6"
+                    fill="#E6E6E6"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <img
+              className=" w-96"
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/e9783dc30e5c8207-1165.webp"
+              alt=""
+            />
+          </div>
+          <div className="flex border border-[#1c1c1f] px-7 py-6 rounded-lg">
+            <div className="">
+              <p className=" text-lg">Music</p>
+              <p className=" text-2xl font-semibold">500,000+</p>
+            </div>
+            <img
+              className=" w-96"
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/ee8688116591ee36-1165.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className=" grid grid-cols-3 gap-5 mt-8">
+          <div className="flex border border-[#1c1c1f] rounded-lg">
+            <div className="absolute px-7 py-6">
+              <p className=" font-semibold">Texts</p>
+              <p className=" text-2xl font-semibold">1,300+</p>
+            </div>
+            <img
+              className=""
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/a2e4641ffbf41332-757.webp"
+              alt=""
+            />
+          </div>
+          <div className="flex border border-[#1c1c1f] rounded-lg">
+            <div className="absolute px-7 py-6">
+              <p className=" font-semibold">Effects</p>
+              <p className=" text-2xl font-semibold">1,100+</p>
+            </div>
+            <img
+              className=""
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/68d27006542e20d3-757.webp"
+              alt=""
+            />
+          </div>
+          <div className="flex border border-[#1c1c1f] rounded-lg">
+            <div className="absolute px-7 py-6">
+              <p className=" font-semibold">Filters</p>
+              <p className=" text-2xl font-semibold">200+</p>
+            </div>
+            <img
+              className=""
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/afe74bc42d889312-757.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="">
+          <p className="text-5xl font-semibold text-center mt-56 mb-20">
+            One video editor for all.
+          </p>
+          <div className=" grid grid-cols-12 ">
+            <div className="col-span-5 my-auto">
+              <div className="border-l-4 px-3">
+                <a href="#">
+                  <p className="font-semibold">Boost your business</p>
+                  <p className=" text-[#a6a6ad] font-light ">
+                    Whether you're creating videos for social media ads, <br />{" "}
+                    marketing, or have other business purposes, we’ve got <br />{" "}
+                    you covered. Use CapCut online to create or share <br />{" "}
+                    video content with your team, and work faster than <br />{" "}
+                    ever.
+                  </p>
+                </a>
+              </div>
+              <div className="border-l-4 border-l-[#5a5a5e] px-3 my-5">
+                <a href="#">
+                  <p className="font-semibold text-[#5a5a5e]">
+                    Meet your professional needs
+                  </p>
+                  <p className=" text-[#424246] font-light">
+                    CapCut desktop supports complex video editing with <br />{" "}
+                    stable performance and a user-friendly interface. <br />{" "}
+                    Download the desktop app and start creating your <br />{" "}
+                    projects.
+                  </p>
+                </a>
+              </div>
+              <div className="border-l-4 border-l-[#5a5a5e] px-3">
+                <a href="#" className="">
+                  <p className="font-semibold text-[#5a5a5e]">
+                    Create videos on the go
+                  </p>
+                  <p className="text-[#424246] font-light">
+                    Capture memorable moments and create on the go. <br /> Cut,
+                    trim, and edit videos with CapCut app to record <br /> and
+                    celebrate life. Finish editing with ease in just a few{" "}
+                    <br /> minutes and share your work on social media.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div className=" col-span-7">
+              <img
+                className=" rounded-lg"
+                src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/0d0df0ea52cf0501-1920.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <p className="text-5xl font-semibold text-center mt-56 mb-20">
+            Secure your data and privacy with CapCut
+          </p>
+          <div className="grid grid-cols-3 gap-8 mx-14">
+            <div className=" text-center bg-[#1c1d21] rounded-xl">
+              <img
+                src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/e710a43b656ff876-560.webp"
+                alt=""
+              />
+              <p className=" font-semibold text-lg">Protect your privacy</p>
+              <p className=" font-light text-[#83848d] mb-10">
+                Encrypted data transmission <br /> prevents any privacy leaks.
+              </p>
+            </div>
+            <div className=" text-center bg-[#1c1d21] rounded-xl">
+              <img
+                src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/6cfda254372884ab-560.webp"
+                alt=""
+              />
+              <p className=" font-semibold text-lg">Safe data storage</p>
+              <p className=" font-light text-[#83848d]">
+                Save your data in our Cloud <br /> Space for secured data
+                storage.
+              </p>
+            </div>
+            <div className=" text-center bg-[#1c1d21] rounded-xl">
+              <img
+                src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/2a0855561af7b4d2-560.webp"
+                alt=""
+              />
+              <p className=" font-semibold text-lg">Smoother access</p>
+              <p className=" font-light text-[#83848d]">
+                Faster and smoother access to your <br /> files.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className=" text-center">
+          <p className="text-5xl font-semibold text-center mt-60 mb-20">
+            Whatever your needs are, CapCut is the <br /> app for you.
+          </p>
+          <p className=" text-sm text-[#7d7e85]">
+            A simple video editing tool to use wherever you like. You can create
+            videos on your browser, your desktop and laptop, or on your phone.
+          </p>
+        </div>
+        <div className=" mx-24">
+          <div className=" grid grid-cols-2 bg-[#1c1d21] px-4 py-4 rounded-xl border border-[#292a2e] mt-10">
+            <div className=" w-96">
+              <img
+                src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/ba98cc91e6ca6c36-1112.webp"
+                alt=""
+              />
+            </div>
+            <div className=" my-auto">
+              <p className=" font-bold">CapCut online creative suite</p>
+              <p className=" font-light text-[#85868f] mt-2">
+                Open CapCut directly in your browser for streamlined <br />{" "}
+                video and image editing. Enjoy magic tools and <br />{" "}
+                collaborative features, all without any downloads.
+              </p>
+              <button className="bg-[#303239] bg-2 text-sm font-semibold px-4 py-2 rounded-lg mt-4">
+                Open in browser
+              </button>
+            </div>
+          </div>
+          <div className=" grid grid-cols-2 gap-6 mt-6">
+            <div className="bg-[#1c1d21] px-4 py-4 rounded-xl border border-[#292a2e]">
+              <img
+                src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/e6c011e4011be428-1064.webp"
+                alt=""
+              />
+              <div className=" mt-5">
+                <div className=" my-auto">
+                  <p className=" font-bold">CapCut desktop</p>
+                  <p className=" font-light text-[#85868f] mt-2">
+                    Download the app on your desktop or laptop to <br /> work
+                    offline at anytime.
+                  </p>
+                  <button className="bg-[#303239] bg-2 text-sm font-semibold px-4 py-2 rounded-lg mt-4">
+                    Download for PC
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[#1c1d21] px-4 py-4 rounded-xl border border-[#292a2e]">
+              <img
+                src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/d6f13ad1f8331191-1064.webp"
+                alt=""
+              />
+              <div className=" mt-5">
+                <div className=" my-auto">
+                  <p className=" font-bold">CapCut mobile</p>
+                  <p className=" font-light text-[#85868f] mt-2">
+                    A mobile app for recording, editing, and sharing <br />{" "}
+                    videos.
+                  </p>
+                  <button className="bg-[#303239] bg-2 text-sm font-semibold px-4 py-2 rounded-lg mt-4">
+                    Download for mobile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer className=" mt-20 mx-32 ">
+        <div className=" grid grid-cols-4 ">
+          <div className="">
+            <img
+              className=" w-40"
+              src="https://lf16-web-buz.capcut.com/obj/capcut-web-buz-sg/ies/lvweb_os_monorepo/platformSSR/802672aa5aafee7a-509.png"
+              alt=""
+            />
+            <p className=" text-[#b3b2b2] text-sm mt-6">
+              Free all-in-one video editor for <br /> everyone to create
+              anything <br /> anywhere
+            </p>
+            <button className="bg-[#17181a] bg text-sm font-semibold py-2 px-3 gap-2 rounded-lg mt-10 flex items-center ">
+              <svg
+                className=" w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="rgba(255,255,255,1)"
+              >
+                <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z"></path>
+              </svg>
+              English
+              <svg
+                className=" w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="rgba(255,255,255,1)"
+              >
+                <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+              </svg>
+            </button>
+            <div className=" flex mt-10 gap-6">
+              <a href="#">
+                <img
+                  className="w-5"
+                  src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/bce2e125c32540fab05de66957848858~tplv-6rr7idwo9f-image.image"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="w-5"
+                  src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/cec1f87f641b45e1b099915dc4c00d0b~tplv-6rr7idwo9f-image.image"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="w-5"
+                  src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/1cbde6b860b54ef395d800cc9f934661~tplv-6rr7idwo9f-image.image"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="w-5"
+                  src="https://p16-capcut-va.ibyteimg.com/tos-maliva-i-6rr7idwo9f-us/3a508777c115460bb1339e7e7b4688c3~tplv-6rr7idwo9f-image.image"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div className="">
+            <p className=" font-semibold">Tools</p>
+            <div className=" mt-5">
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Free cloud storage
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Voice changer
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Video translator
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Video resizer
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Online video converter
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Video transitions
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Online video trimmer
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Image style transfer
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Old photo restoration
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Color match
+              </a>{" "}
+              <br />
+            </div>
+          </div>
+          <div className="">
+            <p className=" font-semibold">Create</p>
+            <div className=" mt-5">
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Sticker maker
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Icon maker
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Make educational video
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Portrait maker
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Reddit video maker
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Logo maker
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Animation maker
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Photo video maker
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Creator hub
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Business channels
+              </a>{" "}
+              <br />
+            </div>
+          </div>
+          <div className="">
+            <p className=" font-semibold">Resource</p>
+            <div className=" mt-5">
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Edit gaming video
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Make TikTok videos
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                CapCut 3D zoom
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                YouTube to MP3 converter
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                YouTube video to MP4
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                TikTok LIVE studio
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Change background color
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Best AI image generator
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Makeup tutorial
+              </a>{" "}
+              <br />
+              <a className=" text-sm text-[#b3b2b2] block foot-link" href="#">
+                Edit MP4 videos
+              </a>{" "}
+              <br />
+            </div>
+          </div>
+        </div>
+        <div className=" flex text-xs text-[#b3b2b2] justify-between border-t border-t-[#1a1919] py-7 mt-32">
+          <div className=" flex gap-5 ">
+            <a className=" block foot-link" href="#">
+              Terms of Service
+            </a>
+            <a className=" block foot-link" href="#">
+              Privacy Policy
+            </a>
+            <a className=" block foot-link" href="#">
+              Cookies Policy
+            </a>
+            <a className=" block foot-link" href="#">
+              License Agreement
+            </a>
+            <a className=" block foot-link" href="#">
+              Creator Terms of Service
+            </a>
+            <a className=" block foot-link" href="#">
+              Community Guidelines
+            </a>
+          </div>
+          <div className=" flex gap-5">
+            <p>Explore:</p>
+            <a className="foot-link-2" href="#">
+              SoundOn
+            </a>
+            <a className="foot-link-2" href="#">
+              TikTok Shop
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -27,3 +27,27 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.foot-link:hover {
+  color: #00c1cd !important;
+}
+
+.foot-link-2:hover {
+  color: #ffffff !important;
+}
+
+.bg:hover {
+  background-color: #202023 !important;
+}
+
+.bg-2:hover {
+  background-color: #2a2a2f !important;
+}
+
+.bg-3:hover {
+  background-color: #02becb !important;
+}
+
+.bg-4:hover {
+  background-color: #434343 !important;
+}
